@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:05 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 19:18:05 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/11 12:53:09 by christine        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CURE_HPP
 #define CURE_HPP
+
+#include "AMateria.hpp"
+#include "ICharacter.hpp"
 
 class Cure: public AMateria
 {
@@ -26,6 +29,6 @@ class Cure: public AMateria
 
 	private :
 		std::string type;
-}
+};
 
 #endif

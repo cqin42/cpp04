@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ICharacter.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 16:09:12 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 18:18:28 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/11 12:49:19 by christine        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ICHARACTER_HPP
 #define ICHARACTER_HPP
+
+#include "AMateria.hpp"
 
 class ICharacter
 {

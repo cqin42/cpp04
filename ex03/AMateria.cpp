@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 15:59:59 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 19:09:57 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/11 13:15:07 by christine        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ AMateria::AMateria(const AMateria& autre)
 	std:: cout << "AMateria Constructor Called." << std::endl;
 	*this = autre;
 }
-AMateria::AMateria& operator=(const AMateria& autre)
+AMateria& AMateria::operator=(const AMateria& autre)
 {
 	std:: cout << "AMateria = operator Called." << std::endl;
 	if (this != &autre)
