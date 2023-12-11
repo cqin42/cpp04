@@ -6,11 +6,12 @@
 /*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:08 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 12:37:32 by christine        ###   ########.fr       */
+/*   Updated: 2023/12/11 13:31:09 by christine        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
+#include "ICharacter.hpp"
 
 Ice::Ice():type("ice")
 {
