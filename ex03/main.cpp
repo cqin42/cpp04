@@ -6,14 +6,16 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:22 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 18:22:33 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/12 16:36:59 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 #include "Ice.hpp"
 #include "ICharacter.hpp"
-#include "IMateria.hpp"
+#include "Character.hpp"
+#include "IMateriaSource.hpp"
+#include "MateriaSource.hpp"
 
 int main()
 {

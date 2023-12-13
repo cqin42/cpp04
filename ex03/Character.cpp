@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
+/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:13 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 13:20:23 by christine        ###   ########.fr       */
+/*   Updated: 2023/12/12 14:37:10 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,10 +63,41 @@ std::string const & Character::getName() const
 
 void Character::equip(AMateria* m)
 {
+	for (int i = 0; i < 4; i++)
+	{
+		if (this->Inventory[i] == NULL)
+		{
+			this->Inventory[i] = m;
+			return ;
+		}
+	}
+	std::cout << "No place in Inventory !" << std::endl;
 }
 void Character::unequip(int idx)
 {
+	if (idx > 4 || idx < 0)
+	{
+		std:: cout << "Inventory have only 4 idx" << std::endl;
+		return ;
+	}
+	if (this->Inventory[idx] == NULL)
+	{
+		std:: cout << "Inventory at idx = " << idx << " are empty, cannot unequip." << std::endl;
+		return ;
+	}
+	this->Inventory[idx] == NULL;
 }
 void Character::use(int idx, ICharacter& target)
 {
+	if (idx > 4 || idx < 0)
+	{
+		std:: cout << "Inventory have only 4 idx" << std::endl;
+		return ;
+	}
+	if (this->Inventory[idx] == NULL)
+	{
+		std:: cout << this->name << "have no materia" << std::endl;
+		return ;
+	}
+	std:: cout << this->name <<  << std::endl;
 }
