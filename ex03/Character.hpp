@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Character.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
+/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 12:47:44 by christine         #+#    #+#             */
-/*   Updated: 2023/12/11 12:55:31 by christine        ###   ########.fr       */
+/*   Updated: 2023/12/13 18:53:46 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CHARACTER_HPP
 #define CHARACTER_HPP
 
+#include "AMateria.hpp"
 #include "ICharacter.hpp"
 
 class Character: public ICharacter

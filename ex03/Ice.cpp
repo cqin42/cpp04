@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Ice.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
+/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:08 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 12:37:32 by christine        ###   ########.fr       */
+/*   Updated: 2023/12/13 19:17:13 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
+// #include "ICharacter.hpp"
 
-Ice::Ice():type("ice")
+Ice::Ice():AMateria("ice")
 {
 	std::cout << "Ice Constructor Called." << std::endl;
 }
@@ -40,5 +41,5 @@ AMateria* Ice::clone() const
 }
 void Ice::use(ICharacter& target)
 {
-	std::cout << "* shoots an ice bolt at " << target << " *" << std::endl;
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }

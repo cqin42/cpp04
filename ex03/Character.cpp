@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:13 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/12 14:37:10 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/13 19:17:51 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ void Character::unequip(int idx)
 		std:: cout << "Inventory at idx = " << idx << " are empty, cannot unequip." << std::endl;
 		return ;
 	}
-	this->Inventory[idx] == NULL;
+	this->Inventory[idx] = NULL;
 }
 void Character::use(int idx, ICharacter& target)
 {
@@ -96,8 +96,8 @@ void Character::use(int idx, ICharacter& target)
 	}
 	if (this->Inventory[idx] == NULL)
 	{
-		std:: cout << this->name << "have no materia" << std::endl;
+		std:: cout << this->_name << "have no materia" << std::endl;
 		return ;
 	}
-	std:: cout << this->name <<  << std::endl;
+	std:: cout << this->_name <<  target.getName() << std::endl;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ICharacter.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
+/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 16:09:12 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 12:49:19 by christine        ###   ########.fr       */
+/*   Updated: 2023/12/13 18:54:32 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 #define ICHARACTER_HPP
 
 #include "AMateria.hpp"
+#include <iostream>
+
+class AMateria;
 
 class ICharacter
 {

@@ -6,14 +6,17 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 16:23:20 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/12 16:32:24 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/13 18:56:21 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef IMATERIASOURCE_HPP
 #define IMATERIASOURCE_HPP
 
+#include "AMateria.hpp"
 #include <iostream>
+
+class AMateria;
 
 class IMateriaSource
 {

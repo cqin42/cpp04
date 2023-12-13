@@ -6,16 +6,18 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:22 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/12 16:36:59 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/13 19:53:47 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 #include "Ice.hpp"
-#include "ICharacter.hpp"
+// #include "ICharacter.hpp"
 #include "Character.hpp"
-#include "IMateriaSource.hpp"
 #include "MateriaSource.hpp"
+#include <string>
+// #include "IMateriaSource.hpp"
+// #include "AMateria.hpp"
 
 int main()
 {

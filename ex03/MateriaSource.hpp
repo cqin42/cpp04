@@ -5,25 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/12 16:26:41 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/12 16:32:03 by cqin             ###   ########.fr       */
+/*   Createdl AMateria* clone() const = 0;
+		virtual void us: 2023/12/12 16:26:41 by cqin              #+#    #+#             */
+/*   Updated: 2023/12/13 18:55:45 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifdef MATERIASOURCE_HPP
+#ifndef MATERIASOURCE_HPP
 #define MATERIASOURCE_HPP
 
+#include "AMateria.hpp"
 #include "IMateriaSource.hpp"
 
-class MateriaSource: public IMateriaSource
+class AMateria;
+
+class MateriaSource : public IMateriaSource
 {
 	public :
 		MateriaSource();
-		~MateriaSource();
+		virtual ~MateriaSource();
 		MateriaSource(const MateriaSource& autre);
-		MateriaSource& operator=(const MateriaSource& autre);
-		void learnMateria(AMateria *m);
-		AMateria* createMateria(std::string const &type);
-}
+		MateriaSource &operator=(const MateriaSource& autre);
+
+		void		learnMateria(AMateria *m);
+		AMateria *	createMateria(std::string const & type);
+
+	private :
+		AMateria *Materia[4];
+};
 
 #endif

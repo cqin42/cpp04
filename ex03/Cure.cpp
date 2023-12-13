@@ -6,13 +6,13 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:01 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 19:22:37 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/13 19:16:55 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cure.hpp"
 
-Cure::Cure():type("cure")
+Cure::Cure():AMateria("cure")
 {
 	std::cout << "Ice Constructor Called." << std::endl;
 }
@@ -25,7 +25,7 @@ Cure::Cure(const Cure& autre):type("cure")
 	std::cout << "Cure Copy Constructor Called." << std::endl;
 		*this = autre;
 }
-Cure::Cure& operator=(const Cure &autre)
+Cure& Cure::operator=(const Cure &autre)
 {
 	std::cout << "Cure = operator Called." << std::endl;
 	if (this != &autre)
@@ -33,12 +33,13 @@ Cure::Cure& operator=(const Cure &autre)
 	return (*this);
 }
 
-AMateria* Cure::clone()
+AMateria* Cure::clone() const
 {
-	AMateria *cloneCure = new Cure();
+	Cure *cloneCure = new Cure();
+	*cloneCure = *this;
 	return (cloneCure);
 }
 void Cure::use(ICharacter& target)
 {
-	std::cout << "* heals " << target  << "'s wounds *"<< std::endl;
+	std::cout << "* heals " << target.getName()  << "'s wounds *"<< std::endl;
 }

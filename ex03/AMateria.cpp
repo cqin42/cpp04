@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
+/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 15:59:59 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 13:15:07 by christine        ###   ########.fr       */
+/*   Updated: 2023/12/13 19:20:51 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,9 @@ std::string const & AMateria::getType() const
 {
 	return (this->type);
 }
+
+ void AMateria::use(ICharacter& target)
+ {
+	std::cout << "Use " << target.getName() << std::endl;
+ }
 

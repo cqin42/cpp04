@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
+/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 18:13:06 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/09 22:39:29 by christine        ###   ########.fr       */
+/*   Updated: 2023/12/13 13:50:07 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ Cat::Cat(const Cat &autre): Animal()
 }
 Cat Cat::operator=(const Cat &autre)
 {
-	std::cout << "Cat operator assignation called." << std::endl;
+	std::cout << "Cat = operator called." << std::endl;
 	if (this != &autre)
 	{
 		this->type = autre.type;

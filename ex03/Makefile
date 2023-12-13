@@ -2,7 +2,12 @@ NAME = a.out
 
 CC = c++
 
-SRC	= main.cpp AMateria.cpp Cure.cpp Ice.cpp ICharacter.cpp IMateria.cpp
+SRC	= main.cpp \
+	 AMateria.cpp \
+	 Cure.cpp \
+	 Ice.cpp \
+	 MateriaSource.cpp \
+	 Character.cpp
 
 OBJ	= $(SRC:.cpp=.o)
 

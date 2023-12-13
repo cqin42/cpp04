@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 16:05:23 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/12 16:35:07 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/13 18:53:42 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #include "ICharacter.hpp"
 #include <iostream>
+
+class ICharacter;
 
 class AMateria
 {
