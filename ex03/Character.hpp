@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 12:47:44 by christine         #+#    #+#             */
-/*   Updated: 2023/12/13 18:53:46 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/15 14:19:40 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
+
 
 class Character: public ICharacter
 {
@@ -31,6 +32,8 @@ class Character: public ICharacter
 	private :
 		std::string _name;
 		AMateria* Inventory[4];
+		AMateria** Floor;
+		int	_floorSize;
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:08 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/13 19:17:13 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/15 14:10:50 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ Ice& Ice::operator=(const Ice &autre)
 AMateria* Ice::clone() const
 {
 	AMateria *cloneIce = new Ice();
+	*cloneIce = *this;
 	return (cloneIce);
 }
 void Ice::use(ICharacter& target)

@@ -12,9 +12,9 @@ SRC	= main.cpp \
 OBJ	= $(SRC:.cpp=.o)
 
 .cpp.o:
-	$(CC) -Wall -Wextra -Werror -std=c++98 -c $< -o $(<:.cpp=.o)
+	$(CC) -Wall -Wextra -Werror -std=c++98 -g3 -c $< -o $(<:.cpp=.o)
 
-$(NAME):	$(OBJ)
+$(NAME):	$(OBJ) Makefile
 	$(CC) -o $(NAME) $(OBJ)
 
 all:	$(NAME)

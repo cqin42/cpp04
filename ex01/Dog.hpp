@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: christine <christine@student.42.fr>        +#+  +:+       +#+        */
+/*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 18:13:14 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/09 22:15:25 by christine        ###   ########.fr       */
+/*   Updated: 2023/12/15 17:05:54 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Dog: public Animal
 		Dog(const Dog &autre);
 		Dog operator=(const Dog &autre);
 		void makeSound() const;
+		std::string getIdea(int pos) const;
+		void setIdea(std::string idea, int pos);
 
 	private :
 		Brain* _brain;

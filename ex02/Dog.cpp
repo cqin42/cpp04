@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 18:13:11 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/11 15:40:10 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/15 17:06:49 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,14 @@ Dog Dog::operator=(const Dog &autre)
 void Dog::makeSound() const
 {
 	std::cout << this->type << " Waouf Waouf." << std::endl;
+}
+
+std::string Dog::getIdea(int pos) const
+{
+	return (this->_brain->getIdea(pos));
+}
+
+void Dog::setIdea(std::string idea, int pos)
+{
+	return (this->_brain->setIdea(idea, pos));
 }

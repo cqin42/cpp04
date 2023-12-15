@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:01 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/13 19:16:55 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/15 16:45:58 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 Cure::Cure():AMateria("cure")
 {
-	std::cout << "Ice Constructor Called." << std::endl;
+	std::cout << "Cure Constructor Called." << std::endl;
 }
 Cure::~Cure()
 {
-	std::cout << "Ice Destructor Called." << std::endl;
+	std::cout << "Cure Destructor Called." << std::endl;
 }
 Cure::Cure(const Cure& autre):type("cure")
 {

@@ -6,7 +6,7 @@
 /*   By: cqin <cqin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 18:19:22 by cqin              #+#    #+#             */
-/*   Updated: 2023/12/13 19:53:47 by cqin             ###   ########.fr       */
+/*   Updated: 2023/12/15 16:58:27 by cqin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 
 int main()
 {
+	{
 	IMateriaSource* src = new MateriaSource();
 	src->learnMateria(new Ice());
 	src->learnMateria(new Cure());
@@ -36,5 +37,35 @@ int main()
 	delete bob;
 	delete me;
 	delete src;
+	}
+	{
+	std::cout << "----------------------" << std::endl;
+	IMateriaSource* src = new MateriaSource();
+	src->learnMateria(new Ice());
+	src->learnMateria(new Cure());
+	ICharacter* me = new Character("me");
+	AMateria* tmp;
+	tmp = src->createMateria("ice");
+	me->equip(tmp);
+	tmp = src->createMateria("ice");
+	me->equip(tmp);
+	tmp = src->createMateria("cure");
+	me->equip(tmp);
+	tmp = src->createMateria("ice");
+	me->equip(tmp);
+	me->equip(tmp);
+	me->equip(tmp);
+	me->unequip(0);
+	me->unequip(1);
+	me->unequip(2);
+	ICharacter* bob = new Character("bob");
+	me->use(0, *bob);
+	me->use(1, *bob);
+	me->use(2, *bob);
+	delete bob;
+	delete me;
+	delete src;
+	}
+
 	return 0;
 }
